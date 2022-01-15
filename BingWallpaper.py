@@ -28,9 +28,7 @@ def set_wallpaper(url, hsh):
 
 if __name__ == '__main__':
     url, hsh = get_wallpaper_data()
-    print(hsh)
 
     if hashes_differ(hsh):
-        print('yes')
         set_wallpaper(url, hsh)
         
